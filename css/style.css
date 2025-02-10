@@ -1,0 +1,28 @@
+:root{
+    --green: #29B047;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    background-color: var(--green);
+    height: 53px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top p{
+    color: var(--white);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    size: 20px;
+    line-height: 30px;
+}
