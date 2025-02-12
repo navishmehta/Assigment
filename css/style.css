@@ -242,46 +242,10 @@ header {
     transition: background-color 0.3s ease;
 }
 
-/* Section - third */
 
-/* Responsive Design */
-@media (max-width: 991px) {
-    .section-third {
-        padding: 3rem 2rem;
-    }
-    .section-heading {
-        font-size: 25px;
-        line-height: 42px;
-    }
-    .section-text {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .purple-btn {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
-}
 
-@media (max-width: 767px) {
-    .section-third {
-        padding: 2rem 1.5rem;
-        text-align: center;
-    }
-    .invest-img {
-        width: 80%;
-        max-width: 300px;
-        margin: 0 auto 20px;
-    }
-    .section-heading {
-        font-size: 22px;
-        line-height: 36px;
-    }
-    .purple-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
+
+
 
 /* Section fifth */
 .section-fifth li{
@@ -342,54 +306,6 @@ header {
     background-position: center;
 }
 
-/* Responsive Adjustments */
-/* Section -fifth */
-@media (max-width: 991px) {
-    .section-fifth {
-        padding: 3rem 2rem;
-    }
-    .section-heading {
-        font-size: 25px;
-        line-height: 42px;
-    }
-    .section-list {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .purple-btn {
-        font-size: 16px;
-        padding: 8px 20px;
-    }
-    .section-image {
-        height: 400px;
-    }
-    .section-list{
-        width: 100%;
-    }
-}
-
-@media (max-width: 767px) {
-    .section-fifth {
-        padding: 2rem 1.5rem;
-        text-align: center;
-    }
-    .section-image {
-        height: 350px;
-        max-width: 100%;
-        margin: 20px auto;
-    }
-    .section-heading {
-        font-size: 22px;
-        line-height: 36px;
-    }
-    .section-list{
-        width: 100%;
-    }
-    .purple-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
 
 
 @media (max-width: 767px) {
@@ -436,10 +352,112 @@ header {
     }
 }
 
- 
-/* For navbar */
 
-@media (max-width: 992px) {
+/* Customer section */
+.section-title {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Customer Section */
+.customer-wrapper {
+    color:White;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.customer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: 650px;
+    padding: 20px;
+    
+}
+
+/* Individual Customers */
+.individual {
+    background-color: rgba(86, 39, 216, 1);
+}
+
+.individual-icon {
+    background-color: rgba(108, 67, 221, 1);
+}
+
+/* Institutional Customers */
+.institutional {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.institutional-icon {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+/* Customer Icons */
+.customer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 142px;
+    width: 142px;
+}
+
+
+
+/* Text Styles */
+.customer-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.customer-text {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Journey Section */
+.journey-section {
+    margin-top: 5rem;
+    height: 324px;
+    background-color: rgba(237, 237, 237, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-container {
+    width: 50%;
+    text-align: center;
+}
+
+.journey-title {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.journey-text {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+/* Responsive Design */
+
+/* Main */
+
+@media only screen and (min-width:992px) and (max-width:1279px) {
+/* Navbar */
     .menu-container {
         display: none;
         flex-direction: column;
@@ -450,101 +468,297 @@ header {
         width: 250px;
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-container.show {
+        }
+        
+        .menu-container.show {
         display: flex;
-    }
-
-    .menu {
+        }
+        
+        .menu {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .toggle-btn {
+        }
+        
+        .menu a {
+        font-size: 18px;
+        }
+        
+        .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        }
+        
+        .toggle-btn {
         display: flex;
+        }
+        
+        .navbar-brand img {
+        height: 40px;
+        }
+
+        /* Journey */
+        .journey-container {
+            width: 60%;
+        }
+        .journey-title {
+            font-size: 28px;
+        }
+        .journey-text {
+            font-size: 21px;
+            line-height: 27px;
+        }
+
+        /* Customer */
+        .customer-title {
+            font-size: 35px;
+        }
+        .customer-text {
+            font-size: 18px;
+        }
+        .customer-icon {
+            height: 120px;
+            width: 120px;
+        }
+
+        /* Section third */
+    .section-third {
+        padding: 4rem 3rem;
+    }
+    .section-heading {
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .section-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .purple-btn {
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+
+    /* section fifth */
+    .section-fifth {
+        padding: 4rem 3rem;
+    }
+    .section-heading {
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .section-list {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .purple-btn {
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+    .section-image {
+        height: 450px;
+    }
+    .section-list {
+        width: 90%;
+    }
+
+	
+}
+/*Small iPad*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+    /* navbar */
+    .menu a {
+        font-size: 17px;
+        }
+        
+        .buttons .btn {
+        font-size: 18px;
+        padding: 2px 10px;
+        }
+        
+        .navbar {
+        padding: 15px 60px;
+        }
+        
+        .navbar-brand img {
+        height: 38px;
+        }
+
+    /* Journey */
+    .journey-container {
+        width: 70%;
+    }
+    .journey-title {
+        font-size: 26px;
+    }
+    .journey-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /* Section third */
+    .section-third {
+        padding: 3rem 2rem;
+    }
+    .section-heading {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .section-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .purple-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    /* Customer */
+    .customer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer-box {
+        max-width: 90%;
+    }
+    .customer-title {
+        font-size: 32px;
+    }
+    .customer-text {
+        font-size: 18px;
+    }
+    .customer-icon {
+        height: 110px;
+        width: 110px;
+    }
+
+    /* section fifth */
+    .section-fifth {
+        padding: 3rem 2rem;
+    }
+    .section-heading {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    .section-list {
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+    }
+    .purple-btn {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    .section-image {
+        height: 400px;
     }
 }
-
-
-
-
-@media only screen and (min-width:992px) and (max-width:1279px){
-.menu-container {
-display: none;
-flex-direction: column;
-position: absolute;
-top: 98px;
-right: 0;
-background-color: white;
-width: 250px;
-padding: 20px;
-box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.menu-container.show {
-display: flex;
-}
-
-.menu {
-flex-direction: column;
-gap: 20px;
-}
-
-.menu a {
-font-size: 18px;
-}
-
-.buttons {
-flex-direction: column;
-align-items: center;
-margin-top: 10px;
-}
-
-.toggle-btn {
-display: flex;
-}
-
-.navbar-brand img {
-height: 40px;
-}
-}
-
-@media only screen and (min-width:768px) and (max-width:991px){
-.menu a {
-font-size: 17px;
-}
-
-.buttons .btn {
-font-size: 18px;
-padding: 2px 10px;
-}
-
-.navbar {
-padding: 15px 60px;
-}
-
-.navbar-brand img {
-height: 38px;
-}
-}
-
+/*Only Mobile*/
 @media (max-width: 767px) {
-.menu a {
-font-size: 16px;
-}
 
-.buttons .btn {
-font-size: 18px;
-padding: 2px 10px;
-}
+    /* navbar */
+    .menu a {
+        font-size: 16px;
+        }
+        
+        .buttons .btn {
+        font-size: 18px;
+        padding: 2px 10px;
+        }
+        
+        .navbar {
+        padding: 15px 50px;
+        }
+        
+        .navbar-brand img {
+        height: 35px;
+        }
 
-.navbar {
-padding: 15px 50px;
-}
+    /* Section third */
+    .section-third {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+    .invest-img {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+    }
+    .section-heading {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .section-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .purple-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 
-.navbar-brand img {
-height: 35px;
-}
-}
+    /* customer */
+    .customer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .customer-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .customer-title {
+        font-size: 28px;
+    }
+    .customer-text {
+        font-size: 16px;
+    }
+    .customer-icon {
+        height: 100px;
+        width: 100px;
+    }
 
+    /* journey */
+    .journey-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .journey-container {
+        width: 90%;
+    }
+    .journey-title {
+        font-size: 24px;
+    }
+    .journey-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .purple-btn {
+        width: 180px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* section fifth */
+    .section-fifth {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+    .section-image {
+        height: 350px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .section-heading {
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .section-list {
+        width: 100%;
+    }
+    .purple-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+	
+}
