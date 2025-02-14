@@ -382,7 +382,102 @@ header {
     transition: background-color 0.3s ease;
 }
 
+/* Graph */
 
+.graph-main {
+    background-image: url('assets/images/Rectangle 496.svg');
+    max-width: 1300px;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+.graph-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.first-para {
+    color: white;
+    font-weight: 600;
+    font-size: 41px;
+
+}
+
+.para-content {
+    display: flex;
+    gap: 50px
+}
+
+.graph-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second-para {
+    line-height: 25px;
+
+}
+
+.second-top {
+    color: rgba(228, 228, 228, 1);
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.second-bottom {
+    color: rgba(228, 228, 228, 1);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.graph-third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.third-left {
+    line-height: 80px;
+    color: var(--gray-color);
+
+}
+
+.third-right {
+    background-image: url('assets/images/Graphs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+
+}
+
+.graph-img {
+    margin-top: 300px;
+    width: 100%
+}
+
+.graph-fourth {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    color: rgba(158, 158, 158, 1);
+    font-size: 12px;
+    font-weight: 400;
+
+}
 
 
 
@@ -542,7 +637,8 @@ header {
 .institutional-icon {
     background-color: rgba(255, 255, 255, 0.13);
 }
-.customer-box:hover{
+
+.customer-box:hover {
     transform: scale(1.01);
     transition: 0.5s;
 }
@@ -1170,6 +1266,112 @@ header {
         font-size: 16px;
         padding: 10px;
     }
+
+    /* graph */
+
+    /* .graph-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.first-para {
+    color: white;
+    font-weight: 600;
+    font-size: 41px;
+
+}
+
+.para-content {
+    display: flex;
+    gap: 50px
+}
+
+.graph-second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second-para {
+    line-height: 25px;
+
+}
+
+.second-top {
+    color: rgba(228, 228, 228, 1);
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.second-bottom {
+    color: rgba(228, 228, 228, 1);
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.graph-third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.third-left {
+    line-height: 80px;
+    color: var(--gray-color);
+
+}
+
+.third-right {
+    background-image: url('assets/images/Graphs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+
+}
+
+.graph-img {
+    margin-top: 300px;
+    width: 100%
+} */
+    .graph-first {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graph-second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-cut {
+        width: 350px
+    }
+
+    .third-left {
+        line-height: 30px;
+    }
+
+    .graph-fourth {
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+       
+    }
+
+   
+
+
+
+
 
     /* section fifth */
     .section-fifth {
