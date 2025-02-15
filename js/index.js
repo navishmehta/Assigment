@@ -80,3 +80,55 @@ dot.addEventListener("click", () => {
 });
 
 
+// car 2
+
+const carousel = document.getElementById("carousel");
+const dotss = document.querySelectorAll(".dot2");
+let currentIndex = 1;
+const totalSlides = 5;
+const scrollStep = 320;
+let autoScrollInterval;
+
+function moveToSlide(index) {
+    currentIndex = index;
+    carousel.style.transition = "transform 0.5s ease-in-out";
+    carousel.style.transform = `translateX(-${currentIndex * scrollStep}px)`;
+    updateDots();
+}
+
+function updateDots() {
+    dotss.forEach((dot, idx) => {
+        dot.classList.toggle("active", idx === currentIndex - 1);
+    });
+}
+
+function autoScroll() {
+    currentIndex++;
+    carousel.style.transition = "transform 0.5s ease-in-out";
+    carousel.style.transform = `translateX(-${currentIndex * scrollStep}px)`;
+    updateDots();
+
+    if (currentIndex === totalSlides + 1) {
+        setTimeout(() => {
+            carousel.style.transition = "none";
+            currentIndex = 1;
+            carousel.style.transform = `translateX(-${currentIndex * scrollStep}px)`;
+            updateDots();
+        }, 500);
+    }
+}
+
+function startAutoScroll() {
+    autoScrollInterval = setInterval(autoScroll, 3000);
+}
+
+function stopAutoScroll() {
+    clearInterval(autoScrollInterval);
+}
+
+// Auto-scroll every 3 seconds
+startAutoScroll();
+
+// Pause auto-scroll on hover
+carousel.addEventListener("mouseenter", stopAutoScroll);
+carousel.addEventListener("mouseleave", startAutoScroll);

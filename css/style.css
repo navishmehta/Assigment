@@ -1,5 +1,6 @@
 :root {
     --purple-color: #5627D8;
+    --purple-color2: #360bad;
     --gray-color: rgba(169, 169, 169, 1);
 }
 
@@ -12,8 +13,33 @@
 }
 
 body {
-    padding-top: 98px;
+    padding-top: 151px;
 }
+
+.top-bar {
+    width: 100vw;
+    height: 53px;
+    background-color: rgba(41, 176, 71, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;/* Ensure it's above the navbar */
+}
+
+.navbar {
+    margin-top: 50px; /* Push the navbar down to prevent overlap */
+}
+.header-text{
+    font-size:20px ;
+    color:white;
+    font-weight: 400;
+}
+
+
 
 /* Navbar */
 
@@ -46,6 +72,9 @@ body {
 .menu-container {
     display: flex;
     gap: 70px;
+    width: 100%;
+   
+    justify-content: space-between;
 }
 
 .menu {
@@ -170,6 +199,17 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.red-color{
+    color:rgba(255, 27, 27, 1); cursor: pointer;
+}
+.header-section{
+    display: flex;gap:25px
+
+}
+.green-color{
+    color:rgba(63, 221, 7, 1)
 }
 
 
@@ -352,6 +392,7 @@ header {
 
 .content-para {
     text-align: center;
+    text-transform: capitalize;
 }
 
 .section-third {
@@ -543,14 +584,85 @@ header {
     background-position: center;
 }
 
+/* Car2 */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.article-card {
+    width: 476px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: left;
+    display: inline-block;
+    margin: 0 10px;
+    height: 225px;
+}
+.article-card img {
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.highlight-bg {
+    background-color: rgba(86, 39, 216, 0.11)
+}
+.dots {
+    text-align: center;
+    margin-top: 15px;
+}
+.dot2 {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot2.active {
+    background-color: #6c5ce7;
+}
+
+.article-heading{
+    font-size: 38px;font-weight: 700;
+
+}
+.article-button{
+    font-size: 26px;font-weight: 400;border: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+.article-card-heading{
+    font-size:20px ;font-weight:600 ;
+
+}
+
+.article-card-dec{
+    font-size:18px ;font-weight:400 ;
+
+}
+
 
 
 @media (max-width: 767px) {
-
     .wrapper,
     .wrapper-2 {
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         width: 100%;
     }
 
@@ -578,16 +690,16 @@ header {
         font-size: 14px;
     }
 
-    .market-header {
+    /* .market-header {
         width: 95%;
         font-size: 16px;
         flex-direction: column;
         text-align: center;
         gap: 10px;
-    }
+    } */
 
     .market-header .icon {
-        gap: 5px;
+        gap: 10px;
     }
 }
 
@@ -695,6 +807,7 @@ header {
     font-size: 23px;
     font-weight: 300;
     line-height: 29px;
+    text-transform: capitalize;
 }
 
 /* Testimonials */
@@ -810,14 +923,16 @@ header {
 }
 
 .contact-btn {
-    height: 79px;
-    width: 237px;
+    /* height: 79px;
+    width: 237px; */
     font-weight: 600;
     font-size: 24px;
     background-color: var(--purple-color);
     border: none;
     color: white;
-
+    border-radius: 4px;
+    padding: 20px 50px;
+    white-space: nowrap;
 }
 
 .rmv-sec {
@@ -868,12 +983,28 @@ header {
     line-height: 30px;
 }
 
+.footer-items a{
+    text-decoration: none;
+    color: #000;
+}
+
 .footer-items li {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     list-style: none;
+    cursor: pointer;
+}
+
+.footer-items li:hover{
+    color: #5627D8;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
 
 .footer-items {
@@ -900,8 +1031,21 @@ header {
     margin-top: 30px;
 }
 
-.footet-icons img {
+.footer-icons img {
     margin-left: 24px;
+}
+
+.footer-icons img:hover{
+    transform: scale(1.4);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn-hover:hover{
+    background-color: var(--purple-color2);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    cursor: pointer;   
 }
 
 /* Responsive Design */
@@ -1050,6 +1194,39 @@ header {
         padding: 15px 60px;
     }
 
+    /* car1 */
+    .carasoul-heading {
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .carasoul-btn {
+        margin-top: 10px !important;
+        font-family: "Poppins", sans-serif;
+        ;
+        width: 108px;
+        height: 29px;
+        background-color: var(--purple-color);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+    .carasoul-left{
+        width: 100%;
+    }
+    .slider-wrapper {
+        background: linear-gradient(rgba(187, 235, 209, 1), rgba(207, 249, 255, 1));
+        width: 100%;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .navbar-brand img {
         height: 38px;
     }
@@ -1143,11 +1320,11 @@ header {
     }
 
     .contact-btn {
-        height: 80px;
-        width: 210px;
+        /* height: 80px;
+        width: 210px; */
         font-weight: 600;
         font-size: 18px;
-
+        padding: 18px 30px;
     }
 
     .rmv-sec {
@@ -1163,13 +1340,136 @@ header {
         display: flex;
         justify-content: center !important;
     }
+
+    /* market */
+    .market-header{
+    
+        font-size: 13px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* wrapper */
+    .wrapper{
+        display: flex;
+        gap: 15px;
+    }
+    .wrapper-2{
+        display: flex;
+        width: 100%;
+       gap:150px;
+       
+    }
+
+    /* graph */
+    .third-left {
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    .graph-img {
+        margin-top: 250px;
+        width: 100%
+    }
+    .graph-third{
+        margin-top:-100px;
+    }
+    .graph-fourth{
+        margin-top: -80px;
+        margin-left: 50px;
+        display: flex;
+        gap:8px;
+    }
+    .graph-main{
+        height: 620px;
+    }
 }
 
 /*Only Mobile*/
 @media (max-width: 767px) {
+    body{
+        margin-top: -55px !important;
+    }
+
+    .top-bar{
+        height: 25px;
+    }
+    .navbar {
+        margin-top: 20px;
+        height: 70px; /* Push the navbar down to prevent overlap */
+    }
+
+    .header-section{
+        gap:17px;
+    }
+   
+
+
+    .header-text{
+        font-size:7px ;
+        color:white;
+        font-weight: 300;
+    }
+
+    .market-header{
+    
+        font-size: 7px;
+        justify-content: center;
+        width: 100%;
+    }
 
     .menu-container {
         display: block;
+       margin-top: -24px;
+    }
+
+    /* car1 */
+    /* car */
+    .carasoul-heading {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .carasoul-left{
+        width: 100%;
+        padding-left: 250px;
+    }
+    .carasoul-btn {
+        margin-top: 10px !important;
+        font-family: "Poppins", sans-serif;
+        ;
+        width: 108px;
+        height: 29px;
+        background-color: var(--purple-color);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+    .custom-carasoul{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-wrapper {
+        background: linear-gradient(rgba(187, 235, 209, 1), rgba(207, 249, 255, 1));
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-item{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+
+    /* black container */
+    .market-content{
+        font-size: 14px;
     }
 
     /* navbar */
@@ -1242,6 +1542,80 @@ header {
         width: 100px;
     }
 
+    /* footer */
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-list{
+        width: 80vw;
+        margin-left: 20px;
+    }
+
+    .footer-items{
+        gap: 25px;
+    }
+
+    .footer-items li{
+        font-size: medium;
+    }
+
+    .footer-logo{
+        width: 80vw;
+        margin-left: 20px;
+        gap: 20px;
+    }
+
+    .footer-logo img{
+        width: 44%;
+    }
+
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    .footer-bottom{
+        font-size: medium;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* contact section */
+    .contact-section{
+        padding-left: 20px;
+    }
+
+    /* top carousel */
+    /* .carasoul-heading{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .carasoul-btn{
+        font-size: medium;
+        width: fit-content;
+        height: fit-content;
+        padding: 6px 14px;
+    }
+
+    .carasoul-left{
+        padding-left: 0px;
+    }    
+
+    .carasoul-left img{
+        width: 150px;
+    }
+
+    .slider-wrapper{
+        height: auto;
+    } */
+
+
     /* journey */
     .journey-section {
         height: auto;
@@ -1267,81 +1641,7 @@ header {
         padding: 10px;
     }
 
-    /* graph */
-
-    /* .graph-first {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.first-para {
-    color: white;
-    font-weight: 600;
-    font-size: 41px;
-
-}
-
-.para-content {
-    display: flex;
-    gap: 50px
-}
-
-.graph-second {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.second-para {
-    line-height: 25px;
-
-}
-
-.second-top {
-    color: rgba(228, 228, 228, 1);
-    font-size: 24px;
-    font-weight: 400;
-
-}
-
-.second-bottom {
-    color: rgba(228, 228, 228, 1);
-    font-size: 28px;
-    font-weight: 600;
-
-}
-
-.graph-third {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-
-}
-
-.third-left {
-    line-height: 80px;
-    color: var(--gray-color);
-
-}
-
-.third-right {
-    background-image: url('assets/images/Graphs.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-
-}
-
-.graph-img {
-    margin-top: 300px;
-    width: 100%
-} */
+  
     .graph-first {
         display: flex;
         flex-direction: column;
@@ -1357,7 +1657,8 @@ header {
     }
 
     .third-left {
-        line-height: 30px;
+        line-height: 10px;
+        font-size: 10px;
     }
 
     .graph-fourth {
@@ -1366,12 +1667,22 @@ header {
         font-size: 12px;
        
     }
-
-   
-
-
-
-
+    .graph-img {
+        margin-top: 220px;
+        width: 100%
+    }
+    .graph-third{
+        margin-top:-150px;
+    }
+    .graph-fourth{
+        margin-top: -150px;
+        margin-left: 50px;
+        display: flex;
+        gap:8px;
+    }
+    .graph-main{
+        height: 610px;
+    }
 
     /* section fifth */
     .section-fifth {
@@ -1406,11 +1717,11 @@ header {
     }
 
     .contact-btn {
-        height: 50px;
-        width: 137px;
+        /* height: 50px;
+        width: 137px; */
         font-weight: 600;
-        font-size: 18px;
-
+        font-size: 14px;
+        padding: 10px 18px;
     }
 
     .rmv-sec {
@@ -1425,6 +1736,24 @@ header {
     .contact-section {
         height: 200px;
     }
+
+    /* car 2 */
+    .article-heading{
+        font-size: 28px;font-weight: 700;
+    
+    }
+    .article-button{
+        font-size: 16px;font-weight: 400;border: none;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+    .car-2 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+   
 
 }
 
