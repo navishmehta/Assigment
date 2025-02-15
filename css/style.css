@@ -651,7 +651,7 @@ header {
 
 }
 
-.article-card-desc{
+.article-card-dec{
     font-size:18px ;font-weight:400 ;
 
 }
@@ -1420,6 +1420,7 @@ header {
 
     .menu-container {
         display: block;
+       margin-top: -24px;
     }
 
     /* car1 */
@@ -1683,12 +1684,6 @@ header {
         height: 610px;
     }
 
-   
-
-
-
-
-
     /* section fifth */
     .section-fifth {
         padding: 2rem 1.5rem;
@@ -1741,6 +1736,24 @@ header {
     .contact-section {
         height: 200px;
     }
+
+    /* car 2 */
+    .article-heading{
+        font-size: 28px;font-weight: 700;
+    
+    }
+    .article-button{
+        font-size: 16px;font-weight: 400;border: none;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+    .car-2 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+   
 
 }
 
