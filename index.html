@@ -29,6 +29,10 @@
 </head>
 
 <body>
+    <div class="top-bar">
+        <marquee> <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis, quam eget molestie.</p></marquee>
+     </div>
+     
     <nav class="navbar">
         <div class="nav-main">
             <div class="navbar-brand">
@@ -63,15 +67,15 @@
         <div class="market-header">
             <div>
                 Market
-                <span style="color:rgba(255, 27, 27, 1); cursor: pointer;">
+                <span class="red-color">
                     Closed
                     <i class="bi bi-chevron-down"></i>
                 </span>
             </div>
 
-            <div style="display: flex;gap:25px">
-                <div class=""><span class="custom-gray">Total Volume: </span>240,135,657</div>
-                <div class="custom-gray">Total Value: <span style="color:rgba(63, 221, 7, 1)">340,895,657.89</span>
+            <div class="header-section" >
+                <div ><span class="custom-gray">Total Volume: </span>240,135,657</div>
+                <div class="custom-gray">Total Value: <span class="green-color" >340,895,657.89</span>
                 </div>
                 <div><span class="custom-gray">Total Trades: </span>8,379</div>
             </div>
@@ -81,15 +85,11 @@
         </div>
     </header>
 
-
-
-
-
     <section class="slider-wrapper">
         <div class="slider-container">
             <div class="slider-track">
                 <!-- Slides -->
-                <div class="custom-carasoul slider-item active">0
+                <div class="custom-carasoul slider-item active">
                     <div class="container carsoul-container">
 
                         <div class="carasoul-right">
@@ -138,8 +138,6 @@
     </section>
 
 
-
-
     <section>
         <div class="container pt-5">
             <div class="pt-5 wrapper">
@@ -153,7 +151,7 @@
                     <h1 class="content-heading pt-5">
                         Personalized Portfolio Management
                     </h1>
-                    <p class=" content-para">Our experienced team creates and manages investment portfolios
+                    <p class="content-para">Our experienced team creates and manages investment portfolios
                         tailored to your financial goals and risk tolerance.</p>
                 </div>
 
@@ -214,19 +212,19 @@
     </section>
 
     <section class="pt-5">
-        <div class="container p-5 section-third">
+        <div class="container pt-5 pb-5 section-third">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 text-center text-md-start">
                     <img src="assets/images/Invest Image.svg" class="img-fluid invest-img">
                 </div>
                 <div class="col-lg-8 col-md-7 ps-lg-5">
                     <div class="pt-4">
-                        <p class="section-heading">
-                            <span class="purple-text">One-on-One Consultations:</span> Receive Personalized Attention
+                        <p class="section-heading ">
+                            <span style="color:var(--purple-color)">One-on-One Consultations:</span> Receive Personalized Attention
                             and Guidance Through One-On-One Consultations With Our Financial Experts.
                         </p>
                         <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce.</p>
-                        <button class="purple-btn">Let's Get Started</button>
+                        <button class="purple-btn btn-hover">Let's Get Started</button>
                     </div>
                 </div>
             </div>
@@ -303,7 +301,7 @@
 
 
     <section>
-        <div class="container p-5 section-fifth">
+        <div class="container pt-5 pb-4 section-fifth">
             <div class="row align-items-center flex-column-reverse flex-md-row">
                 <div class="col-lg-7 col-md-7">
                     <div class="pt-5">
@@ -319,7 +317,7 @@
                             <li>Cutting-Edge Technology: We leverage the latest technology to provide you with seamless
                                 account management and timely market insights.</li>
                         </ul>
-                        <button class="purple-btn">Read About Us</button>
+                        <button class="purple-btn btn-hover">Read About Us</button>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-5 d-flex justify-content-center">
@@ -371,7 +369,7 @@
                     Ready to take the first step toward your financial goals? <br>
                     Get in touch with our team today to schedule a consultation.
                 </p>
-                <button class="purple-btn">Get Started</button>
+                <button class="purple-btn btn-hover">Get Started</button>
             </div>
         </div>
     </section>
@@ -421,6 +419,80 @@
     </section>
 
 
+    <div class="container mt-5 pt-5 pb-5 car-2">
+        <div class="d-flex justify-content-between align-items-center ">
+            <h2 class="article-heading" >Our Latest Articles</h2>
+            <a class="article-button btn-hover"  href="#" class="btn " >View All <img src="assets/images/Arrow---Down-2.svg"></a>
+        </div>
+
+        <div class="carousel-container mt-4">
+            <div class="carousel-wrapper" id="carousel">
+                <!-- Cloned Last Slide (For Seamless Loop) -->
+                <div class="article-card border p-3 d-flex align-items-center">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <!-- Actual Slides -->
+                <div class="article-card border p-3 d-flex align-items-center">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="article-card border p-3 d-flex align-items-center highlight-bg">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="article-card border p-3 d-flex align-items-center">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="article-card border p-3 d-flex align-items-center">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <div class="article-card border p-3 d-flex align-items-center highlight-bg">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+                <!-- Cloned First Slide (For Seamless Loop) -->
+                <div class="article-card border p-3 d-flex align-items-center">
+                    <img src="assets/images/3.svg" alt="Article">
+                    <div class="ms-3">
+                        <p class="article-card-heading" >Adipiscing elit. Fusce, dolor sit amet</p>
+                        <p class="article-card-dec" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce, dolor sit amet...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dots Indicator -->
+        <div class="dots mt-3">
+            <span class="dot2 active" onclick="moveToSlide(1)"></span>
+            <span class="dot2" onclick="moveToSlide(2)"></span>
+            <span class="dot2" onclick="moveToSlide(3)"></span>
+            <span class="dot2" onclick="moveToSlide(4)"></span>
+            <span class="dot2" onclick="moveToSlide(5)"></span>
+        </div>
+    </div>
+
+
     <section class="mt-5 contact-section">
 
         <div class="container  ">
@@ -430,7 +502,7 @@
                 </div>
                 <div class="col-md-3 rmv-sec"></div>
                 <div class="col-md-2 contact-right">
-                    <button class="contact-btn">Contact US</button>
+                    <button class="contact-btn btn-hover">Contact US</button>
                 </div>
 
             </div>
@@ -442,13 +514,13 @@
         <div class="footer-top container">
             <div class="footer-left">
                 <div class="footer-logo">
-                    <img src="assets/assets/images/logo.png" alt="">
+                    <img src="assets/images/logo.png" alt="">
                     <p>Connect with Vista Brokerage for expert financial guidance, diverse investment options, and a
                         path to a prosperous future. Your success is our priority.</p>
                 </div>
                 <div class="footer-list">
                     <div class="footer-items">
-                        <li>Home</li>
+                        <a href="#home"><li>Home</li></a>
                         <li>About Us</li>
                         <li>How it Works</li>
                     </div>
@@ -463,23 +535,16 @@
                     </div>
                 </div>
             </div>
-            <div class="footet-icons">
-                <img src="assets/images/facebook.png" alt="facebook">
-                <img src="assets/images/instagram.png" alt="instagram">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/search/top?q=l%26gconsultancy" target="_blank"><img src="assets/images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/lngconsultancyglobal" target="_blank"><img src="assets/images/instagram.png" alt="instagram"></a>
                 <img src="assets/images/twitter.png" alt="twitter">
             </div>
         </div>
         <div class="footer-bottom">
             &#169;2023 Vista Brokerage
         </div>
-    </footer>
-
-
-    <section>
-        <form>
-            <input type="text" placeholder="white">
-        </form>
-    </section>
+    </footer>   
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
